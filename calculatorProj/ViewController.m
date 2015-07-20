@@ -19,11 +19,27 @@
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     // Do any additional setup after loading the view, typically from a nib.
+    [self initBtn];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.s
+}
+
+// ボタンの枠線を初期化
+- (void)initBtn {
+    NSArray *array
+        = [NSArray arrayWithObjects:
+           self.button0, self.button1, self.button2, self.button3
+         , self.button4, self.button5, self.button6, self.button7
+         , self.button8, self.button9, self.buttonDot, self.buttonEqual
+         , self.buttonPlus, self.buttonMinus, self.buttonMulti,self.buttonDivide
+         , nil];
+    for (UIButton *button in array) {
+        [[button layer] setBorderColor:[[UIColor blackColor] CGColor]];
+        [[button layer] setBorderWidth:1.0];
+    }
 }
 
 - (IBAction)click0:(id)sender {
