@@ -38,7 +38,7 @@
          , nil];
     for (UIButton *button in array) {
         [[button layer] setBorderColor:[[UIColor blackColor] CGColor]];
-        [[button layer] setBorderWidth:1.0];
+        [[button layer] setBorderWidth:0.5];
     }
 }
 
