@@ -9,11 +9,18 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
+static const NSInteger INITIALIZE_STATE = 0;
+static const NSInteger INPUT_VALUE_STATE = 1;
+static const NSInteger CREATE_FOMULA_STATE = 2;
+static const NSInteger RESULT_VALUE_STATE = 3;
+
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
+
+NSInteger baseInt;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,7 +43,7 @@
          , self.button4, self.button5, self.button6, self.button7
          , self.button8, self.button9, self.buttonDot, self.buttonEqual
          , self.buttonPlus, self.buttonMinus, self.buttonMulti,self.buttonDivide
-         , self.buttonAc, nil];
+         , self.buttonC, nil];
     for (UIButton *button in array) {
         [[button layer] setBorderColor:[[UIColor blackColor] CGColor]];
         [[button layer] setBorderWidth:0.5];
@@ -54,6 +61,9 @@
     }else{
         self.calcResult.text = [self.calcResult.text stringByAppendingString:targetStr];
     }
+}
+
+- (IBAction)buttonC:(id)sender {
 }
 
 - (IBAction)click0:(id)sender {
@@ -104,6 +114,8 @@
 }
 
 - (IBAction)clickPlus:(id)sender {
+    baseInt = [self.calcResult.text intValue];
+    
 }
 
 - (IBAction)clickMinus:(id)sender {
@@ -117,6 +129,9 @@
 
 - (IBAction)clickAc:(id)sender {
     self.calcResult.text = @"0";
+}
+
+- (IBAction)clickC:(id)sender {
 }
 
 @end

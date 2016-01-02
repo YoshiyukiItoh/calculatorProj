@@ -30,7 +30,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonMulti;
 @property (weak, nonatomic) IBOutlet UIButton *buttonDivide;
 
-@property (weak, nonatomic) IBOutlet UIButton *buttonAc;
+@property (weak, nonatomic) IBOutlet UIButton *buttonC;
 
 - (IBAction)click0:(id)sender;
 - (IBAction)click1:(id)sender;
@@ -48,7 +48,7 @@
 - (IBAction)clickMinus:(id)sender;
 - (IBAction)clickMulti:(id)sender;
 - (IBAction)clickDivide:(id)sender;
-- (IBAction)clickAc:(id)sender;
+- (IBAction)clickC:(id)sender;
 
 @end
 
