@@ -14,6 +14,7 @@
 		923CE7A01A54276000E83B02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 923CE79F1A54276000E83B02 /* Images.xcassets */; };
 		923CE7A31A54276000E83B02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923CE7A11A54276000E83B02 /* LaunchScreen.xib */; };
 		923CE7AF1A54276000E83B02 /* calculatorProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 923CE7AE1A54276000E83B02 /* calculatorProjTests.m */; };
+		92CF41951C3916800076E212 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 92CF41941C3916800076E212 /* Calculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		923CE7A81A54276000E83B02 /* calculatorProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calculatorProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		923CE7AD1A54276000E83B02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		923CE7AE1A54276000E83B02 /* calculatorProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = calculatorProjTests.m; sourceTree = "<group>"; };
+		92CF41941C3916800076E212 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				923CE79F1A54276000E83B02 /* Images.xcassets */,
 				923CE7A11A54276000E83B02 /* LaunchScreen.xib */,
 				923CE7921A54276000E83B02 /* Supporting Files */,
+				92CF41941C3916800076E212 /* Calculator.m */,
 			);
 			path = calculatorProj;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				923CE79B1A54276000E83B02 /* ViewController.m in Sources */,
+				92CF41951C3916800076E212 /* Calculator.m in Sources */,
 				923CE7981A54276000E83B02 /* AppDelegate.m in Sources */,
 				923CE7951A54276000E83B02 /* main.m in Sources */,
 			);

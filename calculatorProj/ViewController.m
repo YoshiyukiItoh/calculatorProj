@@ -9,18 +9,11 @@
 #import "ViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-static const NSInteger INITIALIZE_STATE = 0;
-static const NSInteger INPUT_VALUE_STATE = 1;
-static const NSInteger CREATE_FOMULA_STATE = 2;
-static const NSInteger RESULT_VALUE_STATE = 3;
-
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
-
-NSInteger baseInt;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -114,7 +107,7 @@ NSInteger baseInt;
 }
 
 - (IBAction)clickPlus:(id)sender {
-    baseInt = [self.calcResult.text intValue];
+//baseInt = [self.calcResult.text intValue];
     
 }
 
